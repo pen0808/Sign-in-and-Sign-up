@@ -82,7 +82,7 @@ button {
 .para a {
   text-decoration: none;
   color: blue;
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 .para p {
   font-size: 0.9rem;
@@ -159,6 +159,21 @@ button {
 
   /* mobile */
   @media screen and (max-width: 500px) {
+
+    .remember-forget {
+      width: 100%;
+    }
+    .input-remember {
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      column-gap: 0.5rem;
+    }
+    .input-remember a {
+      text-decoration: none;
+      color: blue;
+    }
+
     .signup-container {
       border: 1px solid rgba(119, 118, 118, 0.3);
       padding: 1rem 1.5rem;
@@ -171,5 +186,17 @@ button {
       justify-content: start;
       align-items: center;
     }
+    .login-container {
+    border: 1px solid rgba(119, 118, 118, 0.3);
+    padding: 1rem;
+    box-shadow: 0 0 6px 2px rgba(128, 128, 128, 0.3);
+    min-width: 22rem;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    justify-content: start;
+    align-items: center;
+  }
   }
 }
